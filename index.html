@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Petualangan Bubu - Misi Menyelamatkan Hutan Pelangi</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <button id="home" onclick="home()" aria-label="Menu">🏠</button>
+  <div id="bubu">🐻</div>
+  <div id="say">Hai, aku Bubu!</div>
+  <div id="st">⭐ 0</div>
+</header>
+<div id="gm" hidden>
+  <canvas id="cv"></canvas>
+  <div id="bar">
+    <button onclick="pauseG()" aria-label="Jeda">⏸</button>
+    <button onclick="start(lvl)" aria-label="Ulangi level">🔁</button>
+    <button onclick="task()" aria-label="Ulangi suara petunjuk">📢</button>
+    <button id="sb" onclick="sndG()" aria-label="Suara">🔊</button>
+  </div>
+  <div id="ctl">
+    <div><button id="bl" aria-label="Kiri">◀</button><button id="br" aria-label="Kanan">▶</button></div>
+    <button id="bj" aria-label="Lompat">⬆</button>
+  </div>
+</div>
+<main id="stage"></main>
+<button id="mclose" onclick="closeMini()">↩ Kembali ke petualangan</button>
+<div id="ov"></div>
+<script src="minigames.js"></script>
+<script src="platformer.js"></script>
+</body>
+</html>
